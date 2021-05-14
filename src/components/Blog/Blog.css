@@ -1,0 +1,27 @@
+#blog {
+    width: 80%;
+    height: 85vh;
+    background-color: rgba(#ece2e2a6, #cbdfcbc0, #c7c7daca, .9);
+    margin: 5vh 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 40px -5px rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+#blog h2 {
+    position: relative;
+    padding: 4px 7px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#blog h2::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    background-color: tomato;
+    border-radius: 6px;
+}

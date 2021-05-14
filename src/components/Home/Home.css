@@ -1,0 +1,69 @@
+#home {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(74, 99, 231, .8);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5vh 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+    overflow: auto;
+}
+
+#home::after {
+    content: "";
+    background: url('../../img/rifat.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    border-radius: 15px;
+  }
+
+#home > h1 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#home > h6 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+#home > div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: tomato;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#home > div > a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#home > div > a > span {
+    margin-left: 7px;
+}

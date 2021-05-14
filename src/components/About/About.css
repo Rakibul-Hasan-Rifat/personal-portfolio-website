@@ -1,0 +1,71 @@
+#about {
+    width: 80%;
+    height: 85vh;
+    margin: 5vh 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 40px -5px rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+#about h2 {
+    position: relative;
+    padding: 4px 7px;
+    font-family: 'Mulish', sans-serif;
+}
+#about h2::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    background-color: tomato;
+    border-radius: 6px;
+}
+
+#about > div {
+    width: 95%;
+    margin: 75px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about > div > div > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#about div h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+#about > div > div p {
+    text-align: justify;
+}
+
+#about > div > div:first-child {
+    width: 20%;
+}
+
+#about > div > div:last-child {
+    width: 70%;
+}
+
+#about > div div p {
+    color: rgba(128, 128, 128, 1);
+    font-weight: lighter;
+}
+
+#about > div div p span {
+    color: #000;
+}
+
+#about > div > div:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+}

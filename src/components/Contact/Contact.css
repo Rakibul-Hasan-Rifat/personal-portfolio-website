@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+#contact {
+    width: 80%;
+    height: 85vh;
+    background-color: rgba(#ece2e2a6, #cbdfcbc0, #c7c7daca, .9);
+    margin: 5vh 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 40px -5px rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+#contact h2 {
+    position: relative;
+    padding: 7px;
+    font-family: 'Mulish', sans-serif;
+}
+#contact h2::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    background-color: tomato;
+    border-radius: 6px;
+}
+
+#contact > div {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact > div > div:first-child {
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+#contact > div > div > div{
+    
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+#contact > div > div:first-child > div,
+#contact > div > div:last-child {
+    border: 1px solid rgba(128, 128, 128, .3);
+    border-radius: 10px;
+}
+
+#contact > div > div:last-child {
+    width: 60%;
+    display: flex;
+    margin: 9px 15px;
+}
+
+#contact > div > div p:first-child {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#contact > div > div > div p:last-child {
+    color: gray;
+}
+
+#contact > div > div p > svg {
+    color: tomato;
+    font-size: 20px;
+}
+
+#contact > div > div p > b {
+    margin-left: 6px;
+}
+
+#contact-form {
+    width: 100%;
+    padding: 10px;
+}
+
+#contact-form > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-form > div:first-child input,
+#contact-form > div:nth-child(2) input {
+    margin: 7px 5px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, .3);
+    outline: none;
+}
+
+#contact-form > div:nth-child(2) input {
+    width: 91%;
+}
+
+#contact-form > div:nth-child(3) textarea {
+    width: 91%;
+    margin: 7px 5px;
+    padding: 15px 15px;
+    border: 1px solid rgba(128, 128, 128, .3);
+    outline: none;
+    border-radius: 25px;
+}
+
+#contact-form > div:nth-child(4) button {
+    margin: 7px 5px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6347;
+    border-radius: 20px;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+#contact-form > div:nth-child(4) button:hover {
+    background-color: rgb(74, 99, 231);
+}
