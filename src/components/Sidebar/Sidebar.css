@@ -5,6 +5,7 @@
     padding: 15px 20px;
     background-color: rgb(74, 99, 231);
     border-radius: 15px;
+    overflow: auto;
 }
 
 #side-bar * {
