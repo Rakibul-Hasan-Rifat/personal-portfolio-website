@@ -23,19 +23,38 @@
     background-position: center;
     background-size: cover;
     opacity: 0.5;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
     z-index: -1;   
     border-radius: 15px;
   }
 
 #home > h1 {
+    /* max-width: 13ch; */
     font-size: 75px;
     font-weight: 500;
     margin-bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: steps(11);
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-right: 3px solid #fff;
+}
+
+@keyframes text {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 13ch
+    }
 }
 
 #home > h6 {
